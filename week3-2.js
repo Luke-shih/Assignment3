@@ -29,4 +29,5 @@ function parseContent(data) {
         title.textContent = sTitle;                     // 將 p 加入文字(標題位置<地址>)
         card.appendChild(title);                        // 將 title 接到 box 後面
     }
+    
 }
