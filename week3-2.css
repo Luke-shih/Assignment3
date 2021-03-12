@@ -112,7 +112,6 @@ table {
     background:	#C4E1FF;
     display: block;
 }
-
 @media  screen and (max-width: 600px) {
     .box{
         width: 90%;
