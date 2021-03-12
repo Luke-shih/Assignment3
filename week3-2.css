@@ -95,12 +95,12 @@ table {
 }
 .box{
     padding-top: 30px;
+    width: 260px;
     display: flex;
     flex-wrap: wrap;
     }
 .box img{
-    width: 260px;
-    height: 180px;
+    width: 100%;
     display: block;
 }
 .box p{
@@ -112,8 +112,9 @@ table {
     background:	#C4E1FF;
     display: block;
 }
+
 @media  screen and (max-width: 600px) {
-    .box{
+    .box {
         width: 90%;
     }
     .box img{
@@ -129,7 +130,7 @@ table {
         display:contents;
     }
 }
-@media screen and (min-width: 600px) and (max-width: 1200px) {
+@media  screen and (min-width: 600px) and (max-width: 1200px) {
     .content{
         width: 90%;
         text-align: center;
@@ -147,8 +148,10 @@ table {
         display: none;
     }
 }
-@media screen and (min-width: 1200px) {
+@media  screen and (min-width: 1200px) {
     .burger{
         display: none;
     }
 }
+
+
