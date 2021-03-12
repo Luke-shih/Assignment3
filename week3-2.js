@@ -16,11 +16,11 @@ function parseContent(data) {
         imageUrl = material.file.split("http://")[1];   // 擷取網址
         let card = document.createElement("div");       // 創建一個 div
         card.className = 'box';                         // div 命名
-        card.style.width = "260px";                     // 設定 div 寬度
         root.appendChild(card)                          // 將建立的 card(div) 接在 content 後面
 
         let scape = document.createElement("img");      // 建立一個常數 scape 然後 建立一個 <img></img> 
-        scape.style.height = "180px";
+        // scape.style.height = "180px";                   // 設定 img 寬度
+        // scape.style.width = "260px";                    // 設定 img 寬度
         scape.src = `http://${imageUrl}`                // 將 img 接上圖片網址
         card.appendChild(scape);                        // 將 scape 接在 card 後面
 
