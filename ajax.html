@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+    <h1>抓出要求的stitle跟第一張照片</h1>
+    
+    <script>
+        let div = document.createElement("div");  // 創建一個 div
+        div.id = "list"; 
+        let list=document.getElementById("list");
+        let src="https://padax.github.io/taipei-day-trip-resources/taipei-attractions.json";
+        fetch(src).then(function(response){
+           return response.json(); // 將資料用 JSON 的格式詮釋程: 物件和陣列的組合
+        }).then(function(data){
+            let product;          
+            for(let i=0;i<data.result.results.length;i++){
+                let str = data.result.results[i].file;
+                let res = str.split("http://");
+                product = data.result.results[i];
+                div.innerHTML+=product.stitle.bold() + " - " + "http://" + res[1] + "<hr/>";
+                document.body.appendChild(div);
+            }
+        });
+
+
+    </script>
+</body>
+</html>
