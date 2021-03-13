@@ -191,14 +191,12 @@ table {
 .box {
     padding-top: 30px;
     width: 260px;
-    height: 230px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .box img {
     width: 260px;
-    height: 180px;
     display: block;
     object-fit: cover;
 }
@@ -220,6 +218,7 @@ table {
     }
     .box img {
         width: 100%;
+        object-fit: cover;
     }
     .box p {
         width: 100%;
@@ -242,6 +241,7 @@ table {
     }
     .box img {
         width: 100%;
+        object-fit: cover;
     }
     .box p {
         width: 100%;
@@ -260,6 +260,9 @@ table {
 @media screen and (min-width: 1200px) {
     .burger {
         display: none;
+    }
+    .box img {
+        height: 180px;
     }
 }
 
